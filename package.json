@@ -10,8 +10,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --config ./.prettierrc --write --cache"
+      "eslint --cache",
+      "prettier --write --cache"
     ]
   },
   "repository": {
