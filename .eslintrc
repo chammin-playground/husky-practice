@@ -1,0 +1,8 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error", "info"] }], // console 경고
+    "no-multiple-empty-lines": "error", // 여러 줄 공백 금지
+    "dot-notation": "error" // dot notation 사용
+  }
+}
