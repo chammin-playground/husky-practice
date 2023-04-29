@@ -1,5 +1,5 @@
 const husky = () => {
-  console.log(`lint-staged test 4`);
+  console.log(`lint-staged test`);
 };
 
 husky();

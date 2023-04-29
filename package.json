@@ -7,16 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "husky install",
     "lint": "eslint --cache .",
-    "format": "prettier --write --cache ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "format": "prettier --write --cache .",
+    "precommit": "lint-staged",
+    "prepush": "npm run lint && npm run format"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npm run lint",
       "npm run format"
     ]
   },
